@@ -8,8 +8,8 @@ export default function HeroSection() {
   return (
     <section
       className="
-  pt-16 
-  pb-26           /* mobile */
+  pt-26 
+  pb-20           /* mobile */
   sm:pb-16         /* desktop */
   min-h-[75vh] 
   relative 

@@ -1,36 +1,39 @@
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-dark:bg-gray-900">
-      {/* Footer bottom section */}
-      <div className="border-t border-gray-200 dark:border-gray-800">
-        <div className="container relative z-10 px-5 mx-auto sm:px-7">
-          <div className="py-5 grid grid-cols-1 md:grid-cols-2 text-center sm:text-left">
-            {/* Left section (KKN Turi Berdikari and 2025 - 2026) */}
-            <div className="text-xs text-gray-700 dark:text-gray-300 text-left">
-              <p>Disusun oleh Tim KKN Turi Berdikari UGM</p>
-              <p> Platform ini berfungsi sebagai media penyebaran informasi</p>
-            </div>
-
-            {/* Right section (Universitas Gadjah Mada) */}
-            <div className="text-xs text-gray-700 dark:text-gray-300 text-left md:text-right">
-              <p>Universitas Gadjah Mada</p>
-              <p>2025 – 2026</p>
-            </div>
+    <footer
+      className="
+        bg-gradient-to-b
+        from-[#FFE9CC] to-[#FFDDB3]
+        dark:from-[#D18A3C] dark:to-[#B96E28]
+        text-[#7A3E00] dark:text-[#2A1A0C]
+      "
+    >
+      <div className="max-w-6xl mx-auto px-6 py-4">
+        {/* MAIN GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+          {/* LEFT */}
+          <div className="leading-relaxed">
+            <p className="font-semibold">KKN Turi Berdikari UGM</p>
+            <p className="text-[#7A3E00]/80 dark:text-[#2A1A0C]/75">
+              Platform informasi, edukasi, dan pendampingan masyarakat.
+            </p>
           </div>
 
-          {/* Bottom section (Pengembangan Masyarakat di Wilayah Geopark Jogja) */}
-          <div className="pb-5 text-left">
-            {" "}
-            {/* Mengurangi jarak dengan py-3 */}
-            <div
-              className="inline-flex items-center gap-2 rounded-full border border-[rgba(255,140,0,0.2)] bg-white/10 
-    px-3 py-1 sm:px-5 sm:py-2 backdrop-blur-sm"
-            >
-              <p className="text-xs sm:text-xs font-medium text-gray-500 dark:text-gray-300">
-                Pengembangan Masyarakat di Wilayah Geopark Jogja
-              </p>
-            </div>
+          {/* RIGHT */}
+          <div className="md:text-right">
+            <p className="font-semibold">Universitas Gadjah Mada</p>
+            <p className="text-[#7A3E00]/70 dark:text-[#2A1A0C]/70">
+              2025 – 2026
+            </p>
           </div>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="my-2 border-t border-[#7A3E00]/20 dark:border-black/25" />
+
+        {/* BOTTOM */}
+        <div className="text-xs text-center text-[#7A3E00]/70 dark:text-[#2A1A0C]/65">
+          Pengembangan Masyarakat di Wilayah Geopark Jogja
         </div>
       </div>
     </footer>
