@@ -156,7 +156,7 @@ export default function AIToolsTabs() {
             </p>
           </div>
 
-          <div className="p-6 tab-img-bg overflow-hidden rounded-4xl mt-8">
+          <div className="p-3 tab-img-bg overflow-hidden rounded-4xl mt-8">
             <div className="p-3 tab-img-overlay">
               {currentTab.contents && currentTab.contents.length > 0 ? (
                 <Accordion variant="shadow">

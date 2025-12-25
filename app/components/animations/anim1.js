@@ -13,9 +13,9 @@ const Anim1 = () => {
   }, []);
 
   // Menunggu sampai animationData tersedia
-  if (!animationData) {
-    return <div>Loading animation...</div>; // Menampilkan pesan sementara
-  }
+  //   if (!animationData) {
+  //     return <div>Loading animation...</div>; // Menampilkan pesan sementara
+  //   }
 
   const options = {
     loop: true, // Animasi berulang
