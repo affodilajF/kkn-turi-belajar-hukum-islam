@@ -7,7 +7,7 @@ import Header from "./components/layout/header/header";
 
 export default function Home() {
   return (
-    <div className="dark:bg-[#101828] flex flex-col flex-1">
+    <div className="dark:bg-[rgb(16,24,40)] flex flex-col flex-1">
       {/* Header */}
       <Header />
 

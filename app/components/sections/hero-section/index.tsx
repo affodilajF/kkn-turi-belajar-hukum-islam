@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Subheading } from "./subheading";
 // import { IntroVideo } from "./intro-video";
+import Anim1 from "../../animations/anim1.js";
 
 export default function HeroSection() {
   return (
@@ -11,7 +12,6 @@ export default function HeroSection() {
           <div className="max-w-[800px] mx-auto">
             <div className="text-center pb-16">
               <Subheading text="Halo Sobat" />
-
               <h1 className="text-gray-700 mx-auto font-bold mb-4 text-4xl sm:text-[50px] dark:text-white/90 sm:leading-[64px] max-w-[700px]">
                 HUKUM ISLAM?
               </h1>
@@ -20,7 +20,9 @@ export default function HeroSection() {
                 Meningkatkan Literasi Syariah, dan Membangun Pemahaman yang
                 Relevan dengan Kehidupan Modern.
               </p>
-
+              <div className="absolute top-0 left-0 right-0 bottom-0 z-10">
+                <Anim1 /> {/* Animasi di belakang teks */}
+              </div>
               <div className="mt-9 flex sm:flex-row flex-col gap-3 relative z-30 items-center justify-center">
                 <button
                   onClick={() => {

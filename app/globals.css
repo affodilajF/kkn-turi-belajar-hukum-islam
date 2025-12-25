@@ -16,15 +16,15 @@
 }
 
 @theme inline {
-  --color-primary-50: #f4f3ff;
-  --color-primary-100: #ebe9fe;
-  --color-primary-200: #d9d6fe;
-  --color-primary-300: #bdb4fe;
-  --color-primary-400: #9b8afb;
-  --color-primary-500: #7a5af8;
-  --color-primary-600: #6938ef;
-  --color-primary-700: #5925dc;
-  --color-primary-800: #4a1fb8;
+  --color-primary-50: #fff6e6; /* Oren terang */
+  --color-primary-100: #ffe0b3; /* Oren lebih terang */
+  --color-primary-200: #ffcc80; /* Oren muda */
+  --color-primary-300: #ffb84d; /* Oren agak gelap */
+  --color-primary-400: #ffa31a; /* Oren lebih tua */
+  --color-primary-500: #ff8c00; /* Oren sedang (base) */
+  --color-primary-600: #e67e00; /* Oren gelap */
+  --color-primary-700: #cc6600; /* Oren lebih gelap */
+  --color-primary-800: #b35900; /* Oren sangat gelap */
 
   --color-success-50: #ecfdf3;
   --color-success-500: #ecfdf3;
@@ -56,21 +56,29 @@
   );
   --background-image-gradient-2: linear-gradient(
     97deg,
-    #725cff 0%,
-    #b5b1ff 140.21%
+    #ff8c00 0%,
+    #ffa31a 140.21%
   );
 }
 
 .button-bg {
-  background-image: linear-gradient(97deg, #725cff 0%, #b5b1ff 140.21%);
+  background-image: linear-gradient(97deg, #ff8c00 0%, #ffa31a 140.21%);
 }
 
 .tab-img-bg {
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(255, 88, 213, 0.2) 0%,
     rgba(78, 110, 255, 0.2) 100%
+  ); */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 165, 0, 0.4) 0%,
+    /* Oren cerah (kuning oren) dengan transparansi 
+    */
+      rgba(255, 140, 0, 0.3) 100% /* Oren terang (base oren) */
   );
+
   position: relative;
   z-index: 20;
 }
@@ -119,7 +127,7 @@
 .gradient-bg-two {
   background-image: var(
     --Gradient-2,
-    linear-gradient(97deg, #725cff 0%, #b5b1ff 140.21%)
+    linear-gradient(97deg, #ff8c00 0%, #ffa31a 140.21%)
   );
 }
 
@@ -127,7 +135,7 @@
   background-image: linear-gradient(
     180deg,
     rgba(122, 90, 248, 0) 0%,
-    #7a5af8 100%
+    #ffa31a 100%
   );
 }
 
@@ -139,10 +147,10 @@
 .core-feature-icon {
   background-image: linear-gradient(
     180deg,
-    #7a5af8 0%,
+    #ff8c00 0%,
     rgba(122, 90, 248, 0) 100%
   );
-  filter: drop-shadow(0px 23px 33px rgba(87, 80, 241, 0.59));
+  filter: drop-shadow(0px 23px 33px rgba(123, 82, 7, 0.59));
   width: 76px;
   height: 76px;
   align-items: center;
@@ -152,10 +160,6 @@
   border-radius: 50px;
 }
 
-/* .dark .core-feature-icon {
-  border: 5px solid #9b8afb;
-} */
-
 .contact-wrapper {
   border-radius: 24px;
   box-shadow: 0px 32px 100px -12px rgba(16, 24, 40, 0.05);
@@ -164,8 +168,8 @@
 .dashboard-gradient {
   background-image: linear-gradient(
     92deg,
-    var(--Colors-Brand-500, #7a5af8) 0%,
-    var(--Colors-Brand-200, #d9d6fe) 100%
+    var(--Colors-Brand-500, #ff8c00) 0%,
+    var(--Colors-Brand-200, #ffcc80) 100%
   );
 }
 
@@ -200,69 +204,8 @@
   }
 }
 
-/* Desktop hover behavior */
-@media (min-width: 1024px) {
-  .nav-item:hover .dropdown-menu {
-    display: block;
-  }
-
-  /* Rotate arrow on hover for desktop */
-  .nav-item:hover .dropdown-arrow {
-    transform: rotate(180deg);
-  }
-}
-
-/* Gradient border styles */
-.gradient-border {
-  position: relative;
-  background-clip: padding-box;
-  border: 1.5px solid transparent;
-}
-
-.gradient-border::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: -1.4px;
-  border-radius: inherit;
-  background: linear-gradient(
-    to right,
-    rgba(255, 87, 213, 0.5),
-    rgba(78, 110, 255, 0.5)
-  );
-  z-index: -1;
-}
-
-.dark .gradient-border::before {
-  z-index: 5;
-}
-
-/* This hides elements with x-cloak until Alpine.js is ready */
-[x-cloak] {
-  display: none !important;
-}
-
-[data-theme="light"] .white-gradient {
-  background-image: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    #fff 44.75%
-  );
-}
-
-[data-theme="dark"] .white-gradient {
-  background-image: linear-gradient(
-    180deg,
-    rgba(23, 31, 46, 0) 0%,
-    #171f2e 44.75%
-  );
-}
-
 .gradient-btn {
-  background-image: linear-gradient(97deg, #725cff 0%, #b5b1ff 140.21%);
+  background-image: linear-gradient(97deg, #ff8c00 0%, #ffa31a 140.21%);
   color: white;
   background-size: 200% auto;
   background-position: 0% center;
@@ -271,7 +214,7 @@
 }
 
 .gradient-btn:hover {
-  background-image: linear-gradient(97deg, #b5b1ff 0%, #725cff 140.21%);
+  background-image: linear-gradient(97deg, #ffa31a 0%, #ff8c00 140.21%);
   background-position: 100% center;
 }
 
@@ -294,20 +237,6 @@
 .history-item:hover {
   mask-image: none;
 }
-
-/* .history-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  background-image: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 16.49%,
-    #fff 90.64%
-  );
-} */
 
 @keyframes float {
   0% {
