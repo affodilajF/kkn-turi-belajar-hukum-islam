@@ -7,8 +7,8 @@ export default function Footer() {
           <div className="py-5 grid grid-cols-1 md:grid-cols-2 text-center sm:text-left">
             {/* Left section (KKN Turi Berdikari and 2025 - 2026) */}
             <div className="text-xs text-gray-700 dark:text-gray-300 text-left">
-              <p>KKN PPM UGM</p>
-              <p> Turi Berdikari</p>
+              <p>Disusun oleh Tim KKN Turi Berdikari UGM</p>
+              <p> Platform ini berfungsi sebagai media penyebaran informasi</p>
             </div>
 
             {/* Right section (Universitas Gadjah Mada) */}
