@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KKN Turi Berdikari - Belajar Hukum Islam",
+  title: "Belajar Hukum Islam - KKN Turi Berdikari",
   description: "Belajar Hukum Islam",
 };
 
