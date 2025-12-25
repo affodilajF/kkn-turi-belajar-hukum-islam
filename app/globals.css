@@ -61,6 +61,20 @@
   );
 }
 
+.ai-accordion-item[data-open="true"] {
+  border-color: rgba(249, 115, 22, 0.4); /* orange-500 soft */
+  background-color: rgba(249, 115, 22, 0.03);
+}
+
+.ai-accordion-indicator {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.ai-accordion-item[data-open="true"] .ai-accordion-indicator {
+  transform: rotate(90deg);
+  color: #f97316;
+}
+
 .button-bg {
   background-image: linear-gradient(97deg, #ff8c00 0%, #ffa31a 140.21%);
 }

@@ -156,7 +156,7 @@ export default function AIToolsTabs() {
             </p>
           </div>
 
-          <div className="p-3 tab-img-bg overflow-hidden rounded-4xl mt-8">
+          {/* <div className="p-3 tab-img-bg overflow-hidden rounded-4xl mt-8">
             <div className="p-3 tab-img-overlay">
               {currentTab.contents && currentTab.contents.length > 0 ? (
                 <Accordion variant="shadow">
@@ -177,6 +177,51 @@ export default function AIToolsTabs() {
               ) : (
                 <p className="text-gray-500">{currentTab.description}</p>
               )}
+            </div>
+          </div> */}
+          <div className="mt-8 rounded-4xl p-[2px] bg-gradient-to-br from-orange-400 via-orange-300 to-yellow-200 shadow-lg">
+            <div className="tab-img-bg overflow-hidden rounded-4xl bg-white/80 backdrop-blur">
+              <div className="tab-img-overlay p-5">
+                {currentTab.contents && currentTab.contents.length > 0 ? (
+                  <Accordion
+                    variant="splitted"
+                    selectionMode="multiple"
+                    className="gap-3"
+                    itemClasses={{
+                      // base: "rounded-2xl border border-orange-100 bg-white shadow-sm",
+                      // base: "rounded-2xl border border-orange-100 bg-gray-50 shadow-sm",
+                      base: "rounded-2xl border border-orange-200 bg-orange-50/85 backdrop-blur-sm shadow-sm",
+
+                      title:
+                        "text-gray-800 font-semibold text-base flex items-center gap-2",
+                      trigger:
+                        "px-4 py-3 rounded-2xl hover:bg-orange-50 transition-colors",
+                      content:
+                        "px-4 pb-4 pt-1 text-gray-600 text-sm leading-relaxed",
+                      indicator: "text-orange-500 data-[open=true]:rotate-180",
+                    }}
+                  >
+                    {currentTab.contents.map((content, index) => (
+                      <AccordionItem
+                        key={index}
+                        aria-label={`Accordion ${index + 1}`}
+                        title={content.title}
+                      >
+                        <div
+                          className="prose prose-sm max-w-none"
+                          dangerouslySetInnerHTML={{
+                            __html: content.description,
+                          }}
+                        />
+                      </AccordionItem>
+                    ))}
+                  </Accordion>
+                ) : (
+                  <p className="text-gray-500 text-sm leading-relaxed">
+                    {currentTab.description}
+                  </p>
+                )}
+              </div>
             </div>
           </div>
         </div>
