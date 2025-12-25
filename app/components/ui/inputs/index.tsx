@@ -1,9 +1,9 @@
 'use client';
 
-import { cn } from '@/lib/utils';
 import { forwardRef, HTMLProps, useId, useState } from 'react';
 import { Label } from '../label';
-import { EyeCloseIcon, EyeIcon } from '@/icons/icons';
+import { EyeCloseIcon, EyeIcon } from '../../icons/icons';
+import { cn } from '../../lib/utils';
 
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {

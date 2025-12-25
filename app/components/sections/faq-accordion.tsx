@@ -1,6 +1,6 @@
 "use client";
 
-import { MinusIcon, PlusIcon } from "@/icons/icons";
+import { MinusIcon, PlusIcon } from "../icons/icons";
 import { useState } from "react";
 
 // Define the FAQ item type

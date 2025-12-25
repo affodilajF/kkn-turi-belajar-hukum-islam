@@ -1,4 +1,4 @@
-import { AttachmentIcon, LongArrowUpIcon } from '@/icons/icons';
+import { AttachmentIcon, LongArrowUpIcon } from '../icons/icons';
 import { useEffect, useRef } from 'react';
 
 type PropsType = {

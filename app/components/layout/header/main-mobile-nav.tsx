@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { navItems } from './nav-items';
-import { cn } from '@/lib/utils';
-import { ChevronDownIcon } from '@/icons/icons';
+import { cn } from '../../lib/utils';
+import { ChevronDownIcon } from '../../icons/icons';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -51,11 +51,11 @@ export default function MainMobileNav({ isOpen }: MobileMenuProps) {
                       className={cn(
                         'flex justify-between items-center w-full px-3 py-2 rounded-md text-sm font-medium' +
                           ' text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700',
-                        {
-                          'text-gray-700 dark:text-gray-200': item.items.some(
-                            (subItem) => pathname.includes(subItem.href)
-                          ),
-                        }
+                        // {
+                        //   'text-gray-700 dark:text-gray-200': item.items.some(
+                        //     (subItem) => pathname.includes(subItem.href)
+                        //   ),
+                        // }
                       )}
                     >
                       <span>{item.label}</span>
@@ -71,7 +71,7 @@ export default function MainMobileNav({ isOpen }: MobileMenuProps) {
 
                     {activeDropdown === item.label && (
                       <div className="mt-2 space-y-1 pl-4">
-                        {item.items.map((subItem) => (
+                        {/* {item.items.map((subItem) => (
                           <Link
                             key={subItem.href}
                             href={subItem.href}
@@ -87,7 +87,7 @@ export default function MainMobileNav({ isOpen }: MobileMenuProps) {
                           >
                             <span>{subItem.label}</span>
                           </Link>
-                        ))}
+                        ))} */}
                       </div>
                     )}
                   </div>

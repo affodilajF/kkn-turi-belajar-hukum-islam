@@ -1,6 +1,6 @@
 'use client';
 
-import { CopyToClipboard } from '@/components/copy-to-clipboard';
+import { CopyToClipboard } from '../../copy-to-clipboard';
 
 type PropsType = {
   response: string;

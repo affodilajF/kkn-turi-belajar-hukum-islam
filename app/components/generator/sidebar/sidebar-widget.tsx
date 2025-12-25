@@ -1,4 +1,4 @@
-import { getCurrentYear } from '@/lib/utils';
+import { getCurrentYear } from '../../lib/utils';
 
 export default function SidebarWidget() {
   return (

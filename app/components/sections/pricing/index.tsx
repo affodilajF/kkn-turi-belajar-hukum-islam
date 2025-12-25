@@ -4,9 +4,9 @@ import { useState } from 'react';
 import {
   BILLING_PERIODS,
   BILLING_PLANS,
-} from '@/components/sections/pricing/data';
-import { cn } from '@/lib/utils';
-import { PricingCard } from '@/components/sections/pricing/card';
+} from './data';
+import { cn } from '../../lib/utils';
+import { PricingCard } from './card';
 
 type BillingPeriodKey = (typeof BILLING_PERIODS)[number]['key'];
 

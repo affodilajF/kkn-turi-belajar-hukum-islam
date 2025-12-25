@@ -1,7 +1,7 @@
 "use client";
 
-import { CheckIconSm } from "@/icons/icons";
-import { cn } from '@/lib/utils';
+import { CheckIconSm } from "../../icons/icons";
+import { cn } from '../../lib/utils';
 import * as React from "react";
 
 export interface CheckboxProps

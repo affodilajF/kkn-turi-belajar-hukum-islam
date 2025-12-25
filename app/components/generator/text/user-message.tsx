@@ -1,8 +1,8 @@
 'use client';
 
-import { AutoGrowingTextArea } from '@/components/ui/inputs/textarea';
-import { PencilIcon } from '@/icons/icons';
-import { cn } from '@/lib/utils';
+import { AutoGrowingTextArea } from '../../ui/inputs/textarea';
+import { PencilIcon } from '../../icons/icons';
+import { cn } from '../../lib/utils';
 import { useState } from 'react';
 
 type PropsType = {

@@ -1,6 +1,6 @@
 'use client';
 
-import { SearchIcon } from '@/icons/icons';
+import { SearchIcon } from '../../icons/icons';
 import { NewChat } from './new-chat';
 
 type PropsType = {

@@ -1,6 +1,6 @@
 'use client';
 
-import { CheckMarkIcon, ClipboardIcon } from '@/icons/icons';
+import { CheckMarkIcon, ClipboardIcon } from './icons/icons';
 import copy from 'copy-text-to-clipboard';
 import { useState } from 'react';
 

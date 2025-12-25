@@ -1,7 +1,7 @@
-import { CheckIcon } from '@/icons/icons';
-import GlowGradient from '@/assets/pricing/glow';
-import type { TBILLING_PLAN } from '@/components/sections/pricing/data';
-import { cn } from '@/lib/utils';
+import { CheckIcon } from '../../icons/icons';
+import GlowGradient from '../../assets/pricing/glow';
+import type { TBILLING_PLAN } from './data';
+import { cn } from '../../lib/utils';
 import Link from 'next/link';
 import { PropsWithChildren } from 'react';
 
