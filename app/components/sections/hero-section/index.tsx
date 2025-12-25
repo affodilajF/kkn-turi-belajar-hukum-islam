@@ -6,7 +6,17 @@ import Anim1 from "../../animations/anim1.js";
 
 export default function HeroSection() {
   return (
-    <section className="pt-16 min-h-[75vh] relative overflow-hidden dark:bg-[#171F2E]">
+    <section
+      className="
+  pt-16 
+  pb-26           /* mobile */
+  sm:pb-16         /* desktop */
+  min-h-[75vh] 
+  relative 
+  overflow-hidden 
+  dark:bg-[#171F2E]
+"
+    >
       <div className="max-w-[120rem] mx-auto relative">
         <div className="wrapper">
           <div className="max-w-[800px] mx-auto">

@@ -1,5 +1,3 @@
-
-
 import HeroSection from "./components/sections/hero-section";
 import ToolsTab from "./components/sections/tools-tab";
 import Footer from "./components/layout/footer";

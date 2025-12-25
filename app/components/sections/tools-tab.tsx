@@ -119,7 +119,43 @@ export default function AIToolsTabs() {
 
   return (
     // <section className="py-14 md:py-28 dark:bg-dark-primary">
-    <section className="py-14 md:py-28 dark:bg-gray-900">
+    <section className="pb-14 pt-0 md:pb-28 dark:bg-gray-900">
+      <div className="relative w-screen overflow-hidden">
+        {/* GLASS BACKGROUND */}
+        <div className="absolute inset-0 backdrop-blur-xl bg-white/70 dark:bg-[#0f172a]/60" />
+
+        {/* SOFT DEPTH */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/20 to-transparent dark:from-white/5 dark:via-transparent" />
+
+        {/* BORDER */}
+        <div className="absolute inset-x-0 top-0 h-px bg-black/10 dark:bg-white/10" />
+        <div className="absolute inset-x-0 bottom-0 h-px bg-black/5 dark:bg-white/5" />
+
+        {/* MARQUEE */}
+        <div className="relative z-10 h-14 flex items-center overflow-hidden">
+          <div className="marquee-ltr text-lg sm:text-xl text-gray-800 dark:text-slate-200 opacity-80">
+            <span className="marquee-track">
+              📚📚 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+              ⚖️⚖️ &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+              🕌🕌 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+              📖📖 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+              ⚖️⚖️ &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  
+              📚📚 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+              🕌🕌 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+              📖📖 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+              📚📚 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  
+              ⚖️⚖️&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+              🕌🕌 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  
+              📖📖 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+              ⚖️⚖️ &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+              📚📚 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+              🕌🕌 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+              📖📖 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+            </span>
+          </div>
+        </div>
+      </div>
+
       <div className="wrapper">
         <div className="max-w-2xl mx-auto mb-12 text-center">
           <h4 className="mb-3 font-bold text-gray-800 dark:text-white/90 text-2xl md:text-title-lg">
@@ -181,17 +217,14 @@ export default function AIToolsTabs() {
           </div> */}
           <div className="mt-8 rounded-4xl p-[2px] bg-gradient-to-br from-orange-400 via-orange-300 to-yellow-200 shadow-lg">
             <div className="tab-img-bg overflow-hidden rounded-4xl bg-white/80 backdrop-blur">
-              <div className="tab-img-overlay p-5">
+              <div className="tab-img-overlay p-2">
                 {currentTab.contents && currentTab.contents.length > 0 ? (
                   <Accordion
                     variant="splitted"
                     selectionMode="multiple"
                     className="gap-3"
                     itemClasses={{
-                      // base: "rounded-2xl border border-orange-100 bg-white shadow-sm",
-                      // base: "rounded-2xl border border-orange-100 bg-gray-50 shadow-sm",
                       base: "rounded-2xl border border-orange-200 bg-orange-50/85 backdrop-blur-sm shadow-sm",
-
                       title:
                         "text-gray-800 font-semibold text-base flex items-center gap-2",
                       trigger:
