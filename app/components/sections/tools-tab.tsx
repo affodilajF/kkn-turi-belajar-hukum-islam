@@ -1958,6 +1958,76 @@ export default function AIToolsTabs() {
           </div>
         </div>
       </div>
+      <section className="relative py-20 px-6 bg-slate-50 dark:bg-[#0f172a] overflow-hidden">
+        <div className="max-w-5xl mx-auto">
+          {/* Card */}
+          <div
+            className="
+            relative bg-white/90 dark:bg-slate-900/90 backdrop-blur rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)]
+            p-10 sm:p-14 space-y-6 text-slate-700 dark:text-slate-300 leading-relaxed
+            border border-slate-200 dark:border-slate-700
+          "
+          >
+            {/* Heading */}
+            <div className="text-center mb-8">
+              <span className="inline-flex items-center gap-2 px-5 py-1.5 text-sm rounded-full bg-primary-500/10 text-primary-600 dark:text-primary-400">
+                Sumber
+              </span>
+            </div>
+
+            {/* Content */}
+            <ul className="list-disc ml-6 space-y-2">
+              <li>
+                Destri Budi Nugraheni, et. al, 2024,{" "}
+                <i>Pengantar Hukum Islam dan Pelembagaannya di Indonesia</i>,
+                RajaGrafindo
+              </li>
+              <li>
+                Mohammad Daud Ali,{" "}
+                <i>
+                  Islamic Law: Introduction to Islamic Jurisprudence and the
+                  Legal System in Indonesia
+                </i>
+                , PT RajaGrafindo Persada, Jakarta 2016
+              </li>
+              <li>
+                Khotibul Umam,{" "}
+                <i>
+                  Perbankan Syariah Dasar-dasar dan Dinamika Perkembangannya di
+                  Indonesia
+                </i>
+                , PT RajaGrafindo Persada, 2019 (3rd Edition)
+              </li>
+              <li>
+                Yahya Harahap,{" "}
+                <i>Kedudukan, Kewenangan dan Acara Peradilan Agama</i>,
+                SinarGrafika, Jakarta
+              </li>
+              <li>
+                Syarifuddin, Amir, 2009,{" "}
+                <i>
+                  Hukum Perkawinan Islam di Indonesia Antara Fiqh Munakahat dan
+                  Undang-undang Perkawinan
+                </i>
+                , Kencana, Jakarta
+              </li>
+              <li>
+                Ilhami, Destri Budi Nugraheni dan Haniah, 2014,{" "}
+                <i>Pembaruan Hukum Kewarisan Islam di Indonesia</i>, Gadjah Mada
+                University Press, Yogyakarta
+              </li>
+              <li>
+                Indonesian Supreme Court, 2009,{" "}
+                <i>
+                  Book II, Guidelines for the Implementation of Task and
+                  Administrative in Religious Court
+                </i>
+                , Indonesian Supreme Court, Jakarta
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </section>
   );
 }
