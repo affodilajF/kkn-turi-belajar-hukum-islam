@@ -149,12 +149,14 @@ export default function AIToolsTabs() {
           Setiap harta benda memiliki ambang batas yang berbeda; hal ini akan diperjelas dalam legislasi hukum.<br /><br />
 
           Berikut beberapa contoh haul dan nisab yang terkait dengan jenis zakat tertentu:<br />
-          <div class="flex flex-col items-center my-4 text-center">
-            <img src="/images/hero/image.png" alt="Contoh Haul dan Nisab" class="w-full max-w-md mb-2" />
-            <span class="text-sm">
-              Sumber: <a href="https://baznas.jogjakota.go.id/detail/index/18446" target="_blank" class="text-blue-600 dark:text-blue-400 underline">https://baznas.jogjakota.go.id/detail/index/18446</a>
-            </span>
+
+          <div class="flex justify-center">
+            <a href="https://baznas.jogjakota.go.id/detail/index/18446" target="_blank" rel="noopener noreferrer">
+              <img src="/images/hero/image.png" alt="Contoh Haul dan Nisab" class="w-full max-w-md mb-2" />
+            </a>
           </div>
+
+
 
           Contoh: memiliki 85 gram emas (nisab) selama 1 tahun berturut-turut tanpa terputus (haul) berarti seseorang wajib membayar zakat. Karena haul dihitung selama 1 tahun, maka zakat atas emas tersebut harus dibayarkan di akhir tahun.<br /><br />
 
