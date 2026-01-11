@@ -1923,9 +1923,10 @@ export default function AIToolsTabs() {
                       base: "rounded-2xl border border-orange-200 bg-orange-50/85 backdrop-blur-sm shadow-sm",
                       // title:
                       //   "text-gray-800 font-semibold text-base flex items-center gap-2",
+                      // title:
+                      //   "text-gray-800 font-semibold text-base flex items-center gap-2 border-b border-gray-300 dark:border-gray-600 pb-1",
                       title:
-                        "text-center text-gray-800 font-semibold text-base flex items-center gap-2 border-b border-gray-300 dark:border-gray-600 pb-1",
-
+                        "text-gray-800 font-semibold border-b border-gray-300 dark:border-gray-600 pb-1",
                       trigger:
                         "px-4 py-3 rounded-2xl hover:bg-orange-50 transition-colors",
                       content:
