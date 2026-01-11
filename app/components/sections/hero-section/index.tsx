@@ -51,7 +51,7 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-
+        {/* 
         <div className="max-[1100px]:hidden pb-1.5">
           <Image
             src="/images/hero/shape-left-1.svg"
@@ -81,7 +81,7 @@ export default function HeroSection() {
             width={179}
             height={44}
           />
-        </div>
+        </div> */}
       </div>
       <div className="hero-glow-bg pointer-events-none w-full h-167.5 absolute z-10 -bottom-100"></div>
       {/* <HeroLogos /> */}

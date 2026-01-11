@@ -33,7 +33,7 @@ export default function Footer() {
 
         {/* BOTTOM */}
         <div className="text-xs text-center text-[#7A3E00]/70 dark:text-[#2A1A0C]/65">
-          Pengembangan Masyarakat di Wilayah Geopark Jogja
+          Pemberdayaan Masyarakat di Wilayah Geopark Jogja
         </div>
       </div>
     </footer>
