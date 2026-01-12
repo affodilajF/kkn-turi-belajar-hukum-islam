@@ -957,48 +957,57 @@ export default function AIToolsTabs() {
           <hr>
 
         <h4>Jenis Harta</h4>
+        
+        <div class="w-full overflow-x-auto">
+        <div class="w-full overflow-x-auto">
+          <table class="min-w-[700px] w-full text-left border-collapse border border-gray-400 dark:border-gray-600 mb-6">
+            <thead>
+              <tr class="bg-gray-200 dark:bg-gray-900">
+                <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-gray-900 dark:text-gray-200 font-normal">
+                  <b>Jenis Harta</b>
+                </th>
+                <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-gray-900 dark:text-gray-200 font-normal">
+                  <b>Keterangan</b>
+                </th>
+                <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-gray-900 dark:text-gray-200 font-normal">
+                  <b>Akibat Hukum</b>
+                </th>
+              </tr>
+            </thead>
 
-        <table class="w-full text-left border-collapse border border-gray-400 dark:border-gray-600 mb-6">
-          <thead>
-            <tr class="bg-gray-200 dark:bg-gray-900">
-              <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-gray-900 dark:text-gray-200 font-normal"><b>Jenis Harta</b></th>
-              <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-gray-900 dark:text-gray-200 font-normal"><b>Keterangan</b></th>
-              <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-gray-900 dark:text-gray-200 font-normal"><b>Akibat Hukum</b></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="border border-gray-400 dark:border-gray-600 px-4 py-2"><b> Harta Pribadi (Harta Bawaan) </b></td>
-              <td class="border border-gray-400 dark:border-gray-600 px-4 py-2">
-                <ul class="list-disc ml-5">
-                  <li>Dimiliki sebelum perkawinan</li>
-                  <li>Diperoleh dari warisan, hibah, atau wasiat</li>
-                </ul>
-              </td>
-              <td class="border border-gray-400 dark:border-gray-600 px-4 py-2">
-                <ul class="list-disc ml-5">
-                  <li>Dikuasai penuh oleh pemiliknya</li>
-                  <li>Tidak memerlukan persetujuan pasangan</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td class="border border-gray-400 dark:border-gray-600 px-4 py-2"><b> Harta Bersama (Gono-Gini) </b></td>
-              <td class="border border-gray-400 dark:border-gray-600 px-4 py-2">
-                <ul class="list-disc ml-5">
-                  <li>Diperoleh selama perkawinan</li>
-                  <li>Tidak bergantung pada nama atau besarnya kontribusi</li>
-                </ul>
-              </td>
-              <td class="border border-gray-400 dark:border-gray-600 px-4 py-2">
-                <ul class="list-disc ml-5">
-                  <li>Dimiliki bersama oleh suami dan istri</li>
-                  <li>Setiap tindakan hukum atas harta bersama <strong>memerlukan persetujuan kedua pihak</strong></li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+            <tbody>
+              <tr>
+                <td class="border border-gray-400 dark:border-gray-600 px-4 py-2">
+                  <b> Harta Pribadi (Harta Bawaan) </b>
+                </td>
+                <td class="border border-gray-400 dark:border-gray-600 px-4 py-2">
+                  • Dimiliki sebelum perkawinan<br>
+                  • Diperoleh dari warisan, hibah, atau wasiat
+                </td>
+                <td class="border border-gray-400 dark:border-gray-600 px-4 py-2">
+                  • Dikuasai penuh oleh pemiliknya<br>
+                  • Tidak memerlukan persetujuan pasangan
+                </td>
+              </tr>
+
+              <tr>
+                <td class="border border-gray-400 dark:border-gray-600 px-4 py-2">
+                  <b> Harta Bersama (Gono-Gini) </b>
+                </td>
+                <td class="border border-gray-400 dark:border-gray-600 px-4 py-2">
+                  • Diperoleh selama perkawinan<br>
+                  • Tidak bergantung pada nama atau besarnya kontribusi
+                </td>
+                <td class="border border-gray-400 dark:border-gray-600 px-4 py-2">
+                  • Dimiliki bersama oleh suami dan istri<br>
+                  • Setiap tindakan hukum atas harta bersama
+                  <strong>memerlukan persetujuan kedua pihak</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
 
           <p>
             <em>
@@ -1427,6 +1436,7 @@ export default function AIToolsTabs() {
             Pembagian warisan ditentukan oleh porsi yang sudah ditetapkan dalam hukum Islam. Perlu diingat, pembagian selalu dilihat dari sudut pandang orang yang telah meninggal (pewaris), bukan ahli waris.
           </p>
 
+          <div class="w-full overflow-x-auto">
           <table class="w-full text-left border-collapse border border-gray-400 dark:border-gray-600 mb-6">
             <thead>
               <tr class="bg-gray-200 dark:bg-gray-900">
@@ -1501,6 +1511,7 @@ export default function AIToolsTabs() {
               </tr>
             </tbody>
           </table>
+          </div>
 
           Dalam hukum Islam, pembagian warisan selalu dilihat dari sudut pandang orang yang meninggal (pewaris), bukan dari ahli waris. 
 
@@ -1598,12 +1609,13 @@ export default function AIToolsTabs() {
           </ul>
           <p>Saudara baru bisa mendapat warisan jika tidak ada anak dan tidak ada ayah.</p>
 
+          <div class="w-full overflow-x-auto">
           <table class="w-full text-left border-collapse border border-gray-400 dark:border-gray-600 mb-6">
             <thead>
               <tr class="bg-gray-200 dark:bg-gray-900">
-                <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-gray-900 dark:text-gray-200 font-normal">Jenis Saudara</th>
-                <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-gray-900 dark:text-gray-200 font-normal">Kondisi</th>
-                <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-gray-900 dark:text-gray-200 font-normal">Porsi</th>
+                <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-gray-900 dark:text-gray-200 font-normal"><b>Jenis Saudara </b></th>
+                <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-gray-900 dark:text-gray-200 font-normal"><b>Kondisi</b></th>
+                <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-gray-900 dark:text-gray-200 font-normal"><b>Porsi</b></th>
               </tr>
             </thead>
             <tbody>
@@ -1638,11 +1650,12 @@ export default function AIToolsTabs() {
               </tr>
             </tbody>
           </table>
+          </div>
 
           <p><strong>Catatan penting:</strong> Jika pewaris tidak memiliki anak, saudara laki-laki dan perempuan akan mendapatkan bagian ⅓ yang dibagi rata tanpa membedakan gender jika mereka adalah saudara seibu. Namun, dalam skenario umum tanpa orang tua, mereka berbagi dengan rasio 2:1.</p>
 
 
-
+          <div class="w-full overflow-x-auto">
           <table class="w-full text-left border-collapse border border-gray-400 dark:border-gray-600 mb-6">
             <thead>
               <tr class="bg-gray-200 dark:bg-gray-900">
@@ -1701,6 +1714,7 @@ export default function AIToolsTabs() {
               </tr>
             </tbody>
           </table>
+          </div>
 
           `,
         },
