@@ -37,7 +37,7 @@ export default function AIToolsTabs() {
       label: "Hukum Zakat",
       icon: <TextGeneratorIcon className="w-8 h-8" />,
       title: "Materi 1: Hukum Zakat",
-      description: "Materi 1 membahas tentang Pengertian Hukum Islam.",
+      description: "",
       contents: [
         {
           title: "Sumber",
